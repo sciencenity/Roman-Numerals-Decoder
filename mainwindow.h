@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include<string>
+#include<map>
+#include<iostream>
+#include <unordered_map>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,6 +24,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QString rot(std::string str);
+    QString romanConverter(QString rom);
 };
 #endif // MAINWINDOW_H

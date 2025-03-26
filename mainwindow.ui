@@ -6,24 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>897</width>
-    <height>832</height>
+    <width>921</width>
+    <height>735</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>90</y>
-      <width>581</width>
-      <height>698</height>
+      <x>90</x>
+      <y>30</y>
+      <width>651</width>
+      <height>620</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_5">
+    <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QLabel" name="label">
        <property name="styleSheet">
@@ -33,37 +33,37 @@ font-size: 25px
 </string>
        </property>
        <property name="text">
-        <string>ROT13 DECODER</string>
+        <string>Roman Numerals Decoder</string>
        </property>
       </widget>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout_4">
-       <item>
-        <widget class="Line" name="line">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_2">
-           <item>
-            <layout class="QVBoxLayout" name="verticalLayout">
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <widget class="QLineEdit" name="lineEdit">
-             <property name="whatsThis">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Write the text that you want to decode/encode right there&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">font-family: 'Roboto', sans-serif;
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">font: Impact, fantasy;
+font-weight: 500;
+font-size: 15px
+</string>
+       </property>
+       <property name="text">
+        <string>Enter your Roman numeral using English letters WITHOUT SPACES</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="whatsThis">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Write the text that you want to decode/encode right there&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-family: 'Roboto', sans-serif;
   color: #333;
   font-size: 1.2rem;
 	margin: 0 auto;
@@ -79,16 +79,16 @@ padding: 8px;
   outline: none;
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   box-shadow: 0px 0px 20px -18px;</string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QTextBrowser" name="textBrowser">
-             <property name="styleSheet">
-              <string notr="true">font-family: 'Roboto', sans-serif;
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="styleSheet">
+        <string notr="true">font-family: 'Roboto', sans-serif;
   color: #333;
   font-size: 1.2rem;
 	margin: 0 auto;
@@ -104,15 +104,13 @@ padding: 8px;
   outline: none;
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   box-shadow: 0px 0px 20px -18px;</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton">
-           <property name="styleSheet">
-            <string notr="true">border-radius: 10px;
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;
 font: 8pt &quot;Arial&quot;;
 font: 8pt &quot;Arial&quot;;
 font-weight: bold;
@@ -126,15 +124,11 @@ height: 35%;
 hover 
     box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
 </string>
-           </property>
-           <property name="text">
-            <string>start</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
+       </property>
+       <property name="text">
+        <string>start</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -144,7 +138,7 @@ hover
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>897</width>
+     <width>921</width>
      <height>20</height>
     </rect>
    </property>
