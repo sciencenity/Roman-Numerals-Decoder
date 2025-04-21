@@ -6,21 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>921</width>
-    <height>735</height>
+    <width>461</width>
+    <height>484</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>30</y>
-      <width>651</width>
-      <height>620</height>
+      <x>60</x>
+      <y>10</y>
+      <width>311</width>
+      <height>421</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -45,15 +45,9 @@ font-size: 25px
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_2">
-       <property name="styleSheet">
-        <string notr="true">font: Impact, fantasy;
-font-weight: 500;
-font-size: 15px
-</string>
-       </property>
+      <widget class="QCommandLinkButton" name="commandLinkButton">
        <property name="text">
-        <string>Enter your Roman numeral using English letters WITHOUT SPACES</string>
+        <string>How to use it</string>
        </property>
       </widget>
      </item>
@@ -138,10 +132,16 @@ hover
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>921</width>
+     <width>461</width>
      <height>20</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuRoman_Numerals_DEcoder">
+    <property name="title">
+     <string>Roman Numerals DEcoder</string>
+    </property>
+   </widget>
+   <addaction name="menuRoman_Numerals_DEcoder"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
