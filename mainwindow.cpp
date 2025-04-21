@@ -12,8 +12,13 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-QString MainWindow::romanConverter(QString rom){
+void MainWindow::keyPressEvent(QKeyEvent *e){
+    if(e->key() == Qt::Key_Control){
+        QString toDecode = ui->lineEdit->text();
+        ui->textBrowser->setText(romanConverter(toDecode));
+    }
+}
+    QString MainWindow::romanConverter(QString rom){
     std::string roman = rom.toStdString();
     std::unordered_map<char, int> romanMap = {
            {'I', 1},
@@ -43,4 +48,9 @@ void MainWindow::on_pushButton_clicked()
 {
     QString toDecode = ui->lineEdit->text();
     ui->textBrowser->setText(romanConverter(toDecode));
+}
+
+void MainWindow::on_commandLinkButton_clicked()
+{
+    QMessageBox::information(0, "Guide", "Enter your Roman numeral using English letters");
 }
